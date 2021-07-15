@@ -1,0 +1,83 @@
+<style>
+  .cdk-overlay-pane {
+    width: 550px !important;
+  }
+
+  .mat-form-field {
+    width: 100%;
+  }
+</style>
+<!-- 
+<button mat-raised-button color="primary" (click)="topAction()">Top</button>&nbsp;&nbsp;
+<button mat-raised-button color="accent">Bottom</button> -->
+
+<span style="font-weight:600;font-size:15px;" mat-dialog-title>Share Dashboard</span>
+<hr />
+<div mat-dialog-content>
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <span style="font-weight:600;font-size:13px">Share with Team Members</span>
+        </mat-panel-title>
+        <!-- <mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <mat-form-field appearance="fill">
+        <mat-label>Add People</mat-label>
+        <mat-select>
+          <mat-option [value]="Steak">Steak</mat-option>
+          <mat-option [value]="Steak">Diksha</mat-option>
+          <mat-option [value]="Steak">Arwaz</mat-option>
+          <mat-option [value]="Steak">Shubham</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" hideToggle="true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <span style="font-weight:600;font-size:13px;margin-top:5px">Shareable Link</span>
+        </mat-panel-title>
+
+        <div class="float-right">
+          <button mat-stroked-button color="primary">Generate Shareable Link</button>
+        </div>
+
+      </mat-expansion-panel-header>
+      <mat-form-field appearance="outline">
+        <mat-label>Dashboard Link</mat-label>
+        <input matInput placeholder="https://material.angular.io/components/select/overview">
+
+      </mat-form-field>
+
+      <br/>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Open for Everyone</mat-radio-button>&nbsp;&nbsp;&nbsp;
+        <mat-radio-button value="2">Password Protected</mat-radio-button>
+      </mat-radio-group>
+      <br/><br/><br/>
+      <mat-panel-title>
+        Create Password
+      </mat-panel-title>
+      <mat-form-field appearance="outline">
+        <mat-label>Create Password</mat-label>
+        <input matInput placeholder="*********">
+      </mat-form-field>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<!-- <h1 mat-dialog-title>Shareable Link</h1>
+<div mat-dialog-content>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+  </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</div> -->
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

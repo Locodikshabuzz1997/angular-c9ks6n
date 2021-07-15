@@ -1,0 +1,7 @@
+/** No CSS for this example */
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.cdk-overlay-pane {
+  width: 550px !important;
+}
