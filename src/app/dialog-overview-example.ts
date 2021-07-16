@@ -6,7 +6,7 @@ import {
 } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSelectModule } from '@angular/material/select';
-import {MatRadioModule} from '@angular/material/radio';
+import { MatRadioModule } from '@angular/material/radio';
 
 export interface DialogData {
   animal: string;
@@ -25,11 +25,7 @@ export class DialogOverviewExample {
   animal: string;
   name: string;
   panelOpenState = false;
-  foods: Food[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' }
-  ];
+
   constructor(public dialog: MatDialog) {}
 
   topAction() {

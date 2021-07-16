@@ -16,9 +16,30 @@ body {
   width: 400px !important;
 }
 .cdk-overlay-pane {
-  width: 550px !important;
+  width: 600px !important;
+}
+mat-dialog-container {
+  background: none !important;
+}
+.mat-dialog-container {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
+.mat-dialog-title {
+  margin: 0px !important;
+}
+
+.mat-accordion .mat-expansion-panel:first-of-type {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+// .mat-dialog-content{
+//   margin: 0px !important;
+// }
 /**  Copyright 2019 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
     can be found in the LICENSE file at http://angular.io/license */

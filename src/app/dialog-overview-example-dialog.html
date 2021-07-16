@@ -11,12 +11,14 @@
 <button mat-raised-button color="primary" (click)="topAction()">Top</button>&nbsp;&nbsp;
 <button mat-raised-button color="accent">Bottom</button> -->
 
-<span style="font-weight:600;font-size:15px;" mat-dialog-title>Share Dashboard</span>
-<hr />
+<span style="font-weight:500;font-size:14px;background-color:white;padding-top:5px;padding-bottom:5px;padding-left:8px;border-bottom:1px solid #E3E0DF;" mat-dialog-title>Share Dashboard</span>
+<!-- <hr /> -->
 <div mat-dialog-content>
   <mat-accordion>
-    <mat-expansion-panel hideToggle>
+    <mat-expansion-panel hideToggle [expanded]="true">
+
       <mat-expansion-panel-header>
+
         <mat-panel-title>
           <span style="font-weight:600;font-size:13px">Share with Team Members</span>
         </mat-panel-title>
